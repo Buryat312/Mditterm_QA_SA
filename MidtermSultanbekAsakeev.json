@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "97a3d1e9-f55e-456c-a9b5-b13773f11320",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"Sula\",\n  \"password\": \"Sula@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic U3VsYTpTdWxhQDEyMw=='",
+						"description": "Sula, Sula@123, userID: dcfa1c42-73eb-4eb8-b71f-852cc8f306dd",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic UG9sOlBvbFdhbGtAMQ=='",
+						"description": "Pol, PolWalk@1, userID: b498b42b-f2aa-4cbc-8213-a6131a24fbfc",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User/dcfa1c42-73eb-4eb8-b71f-852cc8f306dd",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User",
+						"dcfa1c42-73eb-4eb8-b71f-852cc8f306dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic U3VsYTpTdWxhQDEyMw=='",
+						"description": "Sula, Sula@123, userID: dcfa1c42-73eb-4eb8-b71f-852cc8f306dd",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic UG9sOlBvbFdhbGtAMQ=='",
+						"description": "Pol, PolWalk@1, userID: b498b42b-f2aa-4cbc-8213-a6131a24fbfc",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User/4ec1201f-74a8-4dfc-a28b-556a354fc5c2",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User",
+						"4ec1201f-74a8-4dfc-a28b-556a354fc5c2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Books",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic U3VsYTpTdWxhQDEyMw=='",
+						"description": "Sula, Sula@123, userID: dcfa1c42-73eb-4eb8-b71f-852cc8f306dd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": \"dcfa1c42-73eb-4eb8-b71f-852cc8f306dd\",\n  \"collectionOfIsbns\": [\n    {\n      \"isbn\": \"9781449325862\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic U3VsYTpTdWxhQDEyMw=='",
+						"description": "Sula, Sula@123, userID: dcfa1c42-73eb-4eb8-b71f-852cc8f306dd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"isbn\": \"9781449365035\",\n  \"userId\": \"dcfa1c42-73eb-4eb8-b71f-852cc8f306dd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Book",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
